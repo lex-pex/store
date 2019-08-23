@@ -1,0 +1,144 @@
+.very_top {
+    background: none repeat scroll 0 0; /*#F0F0E9*/
+}
+
+.choosed {
+    color: #ff7f24;
+    font-weight: bold;
+}
+
+.left_menu a {
+    padding-left: 10%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+.left_menu li {
+    border-bottom: 1px solid #ddd;
+}
+
+.left_menu a:hover {
+    text-decoration: none;
+    color: #ff7f24;
+}
+
+.left_menu a:focus {
+    text-decoration: none;
+    color: #ff7f24;
+}
+
+.menu_block {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.menu {
+    z-index: 999;
+    text-align: center;
+    text-decoration:none;
+    font-weight: normal;
+    color: #245269; /*#0083C9;*/
+    font-size: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.menu ul {
+    list-style-type:none;
+}
+
+.menu li {
+    float:left;
+    min-width:100px;
+}
+
+.menu li ul li {
+    /*width:150px;*/
+}
+
+.menu ul li {
+    position:relative;
+}
+
+.menu li ul {
+    padding: 5px;
+    position:absolute;
+    top:auto;
+    left:-1px;
+    display:none;
+    z-index:1;
+}
+
+.menu a {
+    display:block;
+    padding:10px;
+}
+
+.menu li:hover ul {
+    display:block;
+}
+
+.menu a:hover {
+    text-decoration: none;
+    color: #ff7f24;
+}
+
+.menu a:focus {
+    text-decoration: none;
+    color: #ff7f24;
+}
+
+.menu li ul li a {
+    border-top:0px;
+    /*border-left: 1px solid #ccc;*/
+}
+
+.menu a img {
+    border: none;
+}
+
+.header_menu {
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.drop {
+    position: relative;
+    display: inline-block;
+}
+
+.drop_item {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*padding: 12px 16px;*/
+    z-index: 1;
+}
+
+.drop_item a {
+    border-bottom: 1px solid #ddd;
+}
+
+.drop:hover .drop_item {
+    z-index: 999;
+    display: block;
+}
+
+.advert {
+    text-align:center; 
+    border:1px #CCCCC6 solid;
+}
+
+
+
+
+
+
+
