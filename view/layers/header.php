@@ -31,7 +31,7 @@
                             <div class="contactinfo">
                                 <ul class="nav nav-pills">
                                     <li><a href="#"><i class="fa fa-phone"></i> +38(123)456-78-90</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> lexispexiz@gmail.com</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> kujawec@gmail.com</a></li>
                                 </ul>
                             </div>
                         </div>
