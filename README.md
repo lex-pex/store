@@ -1,9 +1,10 @@
 
- * * * * * * * * * * * * * * * * * * * * * * * * * *
- _________________ LEX-PEX E-STORE _________________
+# E-store upon pure php
 
 This application represents the simple Internet Store
 and built on raw PHP upon Front-Route-MVC patterns
+
+## LEX-PEX E-STORE 
 
 - Admin Panel with full controll of:
   products / users / orders 
@@ -21,4 +22,3 @@ Which creates and populates the 'e-store' schema
 And there is need to fill in the db_params.php
 with current parameters as UserName / Password
 
- * * * * * * * * * * * * * * * * * * * * * * * * * *

@@ -1,6 +1,7 @@
 <?php
+
 // FRONT-CONTROLLER
-// UNHIDE ERRORS AND EXCEPTIONS 
+// show errors and exception
 ini_set('display_errors',1);
 // warning "_autoload() php7.2 deprecated" is suppressed
 // error_reporting(E_ALL);
