@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Online-Store, household appliances, computers, phones, tablets">
+        <meta name="author" content="Lex-Pex">
         <title>E-Store</title>
         <link href="/design/css/style.css" rel="stylesheet">
         <link href="/design/css/bootstrap.min.css" rel="stylesheet">
@@ -17,10 +17,6 @@
         <!--[if lt IE 9]><script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script><![endif]-->
         <link rel="shortcut icon" href="/design/images/ico/favi.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/design/images/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/design/images/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/design/images/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="/design/images/ico/apple-touch-icon-57-precomposed.png">
     </head>
     <body>
         <header id="header">
@@ -30,8 +26,8 @@
                         <div class="col-sm-6">
                             <div class="contactinfo">
                                 <ul class="nav nav-pills">
-                                    <li><a href="#"><i class="fa fa-phone"></i> +38(123)456-78-90</a></li>
-                                    <li><a href="#"><i class="fa fa-envelope"></i> kujawec@gmail.com</a></li>
+                                    <li><a href="#"><i class="fa fa-phone bg-info"></i> + 4 098 765 43 21</a></li>
+                                    <li><a href="#"><i class="fa fa-envelope"></i> address@mail.com</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -39,23 +35,16 @@
                             <div class="social-icons pull-right">
                                 <ul>
                                     <li>
-                                        <a href="/cart/"><i class="fa fa-shopping-cart"></i> Корзина
-                                                (<span id="cart_count"><?php echo Cart::countItems(); ?></span>)
-                                        </a>
+                                        <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart (<span id="cart_count"><?php echo Cart::countItems(); ?></span>)</a>
                                     </li>
                                     <li>
-                                        <?php if (User::isGuest()): ?>
-                                        <a href="/login/"><i class="fa fa-lock"></i> Вход</a>
-                                        <?php else : ?>
-                                        <a href="/cabinet/"><i class="fa fa-user"></i>
-                                            <?php echo $_SESSION['u'] ? $_SESSION['u']['name'] : 'Аккаунт'; ?>
-                                        </a>
-                                        <a href="/logout/"><i class="fa fa-unlock"></i> Выход</a>
-                                        <?php endif; ?>
-                                        &nbsp;&nbsp;&nbsp;
+                                    <?php if (User::isGuest()): ?>
+                                        <a href="/login/"><i class="fa fa-lock"></i> Login</a>
+                                    <?php else : ?>
+                                        <a href="/cabinet/"><i class="fa fa-user"></i><?php echo $_SESSION['u'] ? $_SESSION['u']['name'] : 'Profile'; ?></a>
+                                        <a href="/logout/"><i class="fa fa-unlock"></i> Logout</a>
+                                    <?php endif; ?>
                                     </li>
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -66,16 +55,16 @@
                 <div class="menu">
                     <ul>
                         <li><a href="/"><img height="25" src="/design/images/home/logotype.png" alt="" /></a></li>
-                        <li><a href="/">Главная</a></li>
+                        <li><a href="/">Home</a></li>
                         <li>
-                        <div class="drop"><a href="#">Магазин<i class="fa fa-angle-down"></i></a>
-                            <div class="drop_item"><a href="/catalog/">Каталог товаров</a>
-                            <a href="/cart/">Корзина</a></div>
+                        <div class="drop"><a href="#">Store<i class="fa fa-angle-down"></i></a>
+                            <div class="drop_item"><a href="/catalog/">Catalog</a>
+                            <a href="/cart/">Cart</a></div>
                         </div>
                         </li>
-                        <li><a href="/blog/">Блог</a></li> 
-                        <li><a href="/about/">О сайте</a></li>
-                        <li><a href="/contacts/">Контакты</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/contacts/">Contacts</a></li>
                     </ul>
                 </div>
             </div>

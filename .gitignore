@@ -1,5 +1,6 @@
-/cfg/db_params.php
-/cfg/db_params_host.php
+/config/db_params.php
+/config/db_params_host.php
 /archive
+/upload/images
 /nbproject
 .idea

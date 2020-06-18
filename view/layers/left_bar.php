@@ -1,7 +1,7 @@
 <?php $categories = Category::getCategoriesList(); ?>
 <div class="col-sm-3">
     <div class="left-sidebar">
-        <h2>категории</h2>
+        <h2>Categories</h2>
         <?php foreach ($categories as $category): ?>
         <div>
             <div class="left_menu">
@@ -18,7 +18,7 @@
         <br/><br/><br/>
         <div class="left-sidebar">
             <div class="advert">
-                <h2>РЕКЛАМА</h2>
+                <h2>Advertising</h2>
                 <img width="80%" align="center" src="/upload/images/folder/advert.gif"/>
                 <br/><br/><br/>
             </div>

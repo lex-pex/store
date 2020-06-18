@@ -6,8 +6,8 @@ and built on raw PHP upon Front-Route-MVC patterns
 
 ## LEX-PEX E-STORE 
 
-- Admin Panel with full controll of:
-  products / users / orders 
+- Admin Panel with full control of:
+         products / users / orders 
 
 - Authentication and Authorization with Admin-User roles
 
@@ -15,7 +15,7 @@ and built on raw PHP upon Front-Route-MVC patterns
 
 - And couple Ajax on JQuery for 'shopping cart' filling
 
-To run the application:
+### Deploy the application:
 
 In folder 'cfg' (config) there is a dump of DataBase
 Which creates and populates the 'e-store' schema

@@ -5,7 +5,7 @@ class Db {
 
     public static function getConnection() {
 
-        $paramsFile = ROOT.'/cfg/db_params.php';
+        $paramsFile = ROOT.'/config/db_params.php';
         $params = include($paramsFile);
 
         $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
