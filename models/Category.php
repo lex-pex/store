@@ -1,6 +1,6 @@
 <?php
 
-require_once(ROOT.'/details/Db.php');
+require_once(ROOT . '/helpers/Db.php');
 
 class Category {
     

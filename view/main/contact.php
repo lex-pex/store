@@ -5,14 +5,15 @@
             <?php include ROOT . '/view/layers/left_bar.php'; ?>
             <div class="col-sm-9 padding-right">
                 <div class="features_items">
-                    <h2 class="title text-center">Связь с нами</h2>
+                    <h2 class="title text-center">Contact with us</h2>
                     <?php if ($res): include ROOT.'/view/main/mailsent.php'; else: ?>
-                    <div class="col-sm-4">
+                    <div class="col-md-8">
                         <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <h2 class="title text-center">Контактные данные</h2>
-                                <p>Developer's <b>Email: </b>javaenginee@gmail.com</p>
-                                <h2 class="title text-center">отправить сообщение</h2>
+                            <div class="single-products" style="padding: 10px">
+                                <h2 class="title text-center">Contact details</h2>
+                                <p>Developer's <b>Email: </b></p>
+                                <p>address@mail.com</p>
+                                <h2 class="title text-center">send message</h2>
                                 <div class="signup-form">
                                     <form action="#" method="post">
                                         <input type="email" name="mail" placeholder="E-mail" value="<?php echo $mail ?>" />
@@ -27,34 +28,20 @@
                                                 <?php endforeach; ?>
                                             </ul>
                                         <?php endif; ?>
-                                        <br/>
-                                        <button type="submit" name="submit" class="btn btn-default">
-                                            Отправить
-                                        </button>
+                                        <hr/>
+                                        <button type="submit" name="submit" class="btn btn-default">Send</button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <?php endif; ?>
-                    <div class="col-sm-4">
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <p>Ждем ваших писем, сообщений, предложений,
-                                    приветов. Не оставляем без ответов.</p>
-                                <img width="100%" src="/upload/images/folder/mailsent.gif"/>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <?php include ROOT.'/view/layers/rotator.php'; ?>
             </div>
         </div>
     </div>
 </section>
-
 <?php
 include ROOT . '/view/layers/footer.php';
-
-
 

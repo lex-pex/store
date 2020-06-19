@@ -5,18 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Online-Store, household appliances, computers, phones, tablets">
         <meta name="author" content="Lex-Pex">
-        <title>E-Store</title>
-        <link href="/design/css/style.css" rel="stylesheet">
-        <link href="/design/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/design/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/design/css/prettyPhoto.css" rel="stylesheet">
-        <link href="/design/css/price-range.css" rel="stylesheet">
-        <link href="/design/css/animate.css" rel="stylesheet">
-        <link href="/design/css/main.css" rel="stylesheet">
-        <link href="/design/css/responsive.css" rel="stylesheet">
+        <title>Lex-Pex E-Store</title>
+        <link href="/public/css/style.css?v=2" rel="stylesheet">
         <!--[if lt IE 9]><script src="js/html5shiv.js"></script>
         <script src="js/respond.min.js"></script><![endif]-->
-        <link rel="shortcut icon" href="/design/images/ico/favi.png">
+        <link rel="shortcut icon" href="/public/images/ico/favi.png">
     </head>
     <body>
         <header id="header">
@@ -54,15 +47,16 @@
             <div class="menu_block">
                 <div class="menu">
                     <ul>
-                        <li><a href="/"><img height="25" src="/design/images/home/logotype.png" alt="" /></a></li>
+                        <li><a href="/"><img height="25" src="/public/images/home/logotype.png" alt="" /></a></li>
                         <li><a href="/">Home</a></li>
                         <li>
-                        <div class="drop"><a href="#">Store<i class="fa fa-angle-down"></i></a>
-                            <div class="drop_item"><a href="/catalog/">Catalog</a>
-                            <a href="/cart/">Cart</a></div>
-                        </div>
+                            <div class="drop"><a href="#">Store<i class="fa fa-angle-down"></i></a>
+                                <div class="drop_item">
+                                    <a href="/catalog/">Catalog</a>
+                                    <a href="/cart/">Cart</a>
+                                </div>
+                            </div>
                         </li>
-                        <li><a href="/blog/">Blog</a></li>
                         <li><a href="/about/">About</a></li>
                         <li><a href="/contacts/">Contacts</a></li>
                     </ul>

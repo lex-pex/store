@@ -5,7 +5,7 @@
             <?php include ROOT . '/view/layers/left_bar.php'; ?>
             <div class="col-sm-9 padding-right">
                 <div class="features_items">
-                    <h2 class="title text-center">статьи</h2>
+                    <h2 class="title text-center">Articles</h2>
                     <?php foreach ($articles as $article): ?>
                     <?php if ($article['status']): ?>
                         <div class="col-sm-4">
@@ -28,7 +28,5 @@
             </div>
         </div>
     </div>
-
 </section>
-
-<?php include ROOT . '/view/layers/footer.php'; 
+<?php include ROOT . '/view/layers/footer.php';

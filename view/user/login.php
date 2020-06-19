@@ -5,7 +5,7 @@
             <?php include ROOT . '/view/layers/left_bar.php'; ?>
             <div class="col-sm-9 padding-right">
                 <div class="features_items">
-                    <h2 class="title text-center">Вход на сайт</h2>
+                    <h2 class="title text-center">Website Entrance</h2>
                     <section>
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">

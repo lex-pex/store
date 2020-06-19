@@ -5,7 +5,7 @@
             <?php include ROOT . '/view/layers/left_bar.php'; ?>
             <div class="col-sm-9 padding-right">
                 <div class="features_items">
-                    <h2 class="title text-center">категория: <?php echo $categoryName; ?></h2>
+                    <h2 class="title text-center">Category: <?php echo $categoryName; ?></h2>
                     <?php foreach ($products as $product): ?>
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
@@ -18,12 +18,10 @@
                                         </a>
                                         <!--<a href="/cart/add/"-->
                                         <a href="#" data_id="<?php echo $product['id']; ?>"
-                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>
-                                            В корзину
-                                        </a>
+                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
-                                        <img src="/design/images/home/new.png" class="new" alt=""/>
+                                        <img src="/public/images/home/new.png" class="new" alt=""/>
                                     <?php endif; ?>
                                 </div>
                             </div>

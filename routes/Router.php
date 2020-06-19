@@ -9,10 +9,13 @@ class Router {
     private $routes;
 
     function __construct() {
-        $routesFile = ROOT.'/config/routes.php';
+        $routesFile = ROOT.'/routes/routes.php';
         $this->routes = include($routesFile);
     }
 
+    /**
+     * Call the corresponding controllers action
+     */
     public function run() {
         $request = $this->getURI();
         foreach ($this->routes as $pattern => $path) {

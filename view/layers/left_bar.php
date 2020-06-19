@@ -8,8 +8,7 @@
                 <ul>
                     <li>
                         <a href="/category/<?php echo $category['id']; ?>"
-                            class="<?php if ($categoryId == $category['id']) echo 'choosed'; ?>">
-                            <?php echo $category['name']; ?></a>
+                           class="<?php if ($categoryId == $category['id']) echo 'choosed'; ?>"><?php echo $category['name']; ?></a>
                     </li>
                 </ul>
             </div>
@@ -19,7 +18,7 @@
         <div class="left-sidebar">
             <div class="advert">
                 <h2>Advertising</h2>
-                <img width="80%" align="center" src="/upload/images/folder/advert.gif"/>
+                <img width="80%" align="center" src="/upload/images/folder/advert_1.gif"/>
                 <br/><br/><br/>
             </div>
         </div>

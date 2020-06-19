@@ -20,7 +20,7 @@
                                 <a href="#" data_id="<?php echo $p['id']; ?>"
                                    class="btn btn-default add-to-cart">
                                     <i class="fa fa-shopping-cart"></i>
-                                    В корзину
+                                    Add to Cart
                                 </a>
                             </div>
                         </div>

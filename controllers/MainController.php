@@ -3,7 +3,6 @@
 class MainController {
 
     public function actionIndex() {
-//        $products = Product::getLatestProducts(6); // for showfront page
         $articles = Article::getArticles();
         require_once ROOT.'/view/main/index.php';
     }
@@ -23,17 +22,17 @@ class MainController {
             $errors = false;
 
             if (!User::checkMail($mail)) {
-                $errors[] = 'Неправильный E-mail';
+                $errors[] = 'Wrong E-mail';
             }
 
             if (empty(trim($text))) {
-                $errors[] = 'Пустое сообщение';
+                $errors[] = 'The message is empty';
             }
 
             if ($errors == false) {
                 $adminEmail = 'javaenginee@gmail.com';
                 $message = "Текст: {$text}. От {$mail}";
-                $subject = 'Сообщение с сайта';
+                $subject = 'Message from LexPexStore';
                 $res = mail($adminEmail, $subject, $message);
             }
         }
@@ -43,11 +42,6 @@ class MainController {
 
     public function actionAbout() {
         require_once(ROOT . '/view/main/about.php');
-        return true;
-    }
-
-    public function actionBlog() {
-        require_once(ROOT . '/view/main/blog.php');
         return true;
     }
 

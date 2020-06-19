@@ -9,7 +9,7 @@
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="view-product">
-                                <img src="<?php echo $article['image']; ?>" alt="" />
+                                <img src="<?php echo $article['image']; ?>" alt="<?php echo $article['title']; ?>" />
                             </div>
                         </div>
                         <div class="col-sm-7">

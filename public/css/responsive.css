@@ -5,35 +5,26 @@
 
 /* md */
 @media (min-width: 992px) and (max-width: 1199px) {
- 
- 
-.usa{
-	margin-right: 0;
-} 
-
-.shipping img{
-	width: 100%;
+	.usa{
+		margin-right: 0;
+	}
+	.shipping img{
+		width: 100%;
+	}
+	.searchform input{
+		width: 160px;
+	}
+	.product-information span span{
+		width: 100%;
+	}
+	#similar-product .carousel-inner .item img{
+		width: 65px;
+	}
+	#cart_items .cart_info .cart_description h4,
+	#cart_items .cart_info .cart_description p{
+		text-align: center;
+	}
 }
-
-.searchform input{
-	width: 160px;
-}
-
-.product-information span span{
-	width: 100%;
-}
-
-#similar-product .carousel-inner .item img{
-	width: 65px;
-}
-
-#cart_items .cart_info .cart_description h4, 
-#cart_items .cart_info .cart_description p{
-	text-align: center;
-} 
-
-}
-
 
 /* sm */
 @media (min-width: 768px) and (max-width: 991px) {

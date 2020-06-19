@@ -7,26 +7,21 @@
                 <div class="features_items">
                     <div class="col-sm-4">
                         <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <h2 class="title text-center">Об этом сайте</h2><b>
+                            <div class="single-products" style="padding:10px;text-align:center">
+                                <h2 class="title text-center">About this Website</h2><b>
                                 <p>
-                                    &nbsp;Сайт представляет собой простейший интернет магазин.
-                                    Функциональность хотя и минимальная, но полностью
-                                    покрывает все базовые потребности не большого
-                                    интернет-предприятия.
+                                    The site is a self-sufficient online store.
                                 </p>
                                 <p>
-                                    &nbsp;Движок сайта находится в постоянной разработке, 
-                                    развиваясь, уплотняя свой функционал и повышая свою
-                                    стессоустойчивость.
-                                </p></b>
+                                    All functionality is written by hand without frameworks and libraries.
+                                </p>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="product-image-wrapper">
                             <div class="single-products">
-                                <img width="100%" src="/upload/images/folder/apple.jpg"/>
+                                <img width="100%" src="/upload/images/folder/piggy_003_1.gif"/>
                             </div>
                         </div>
                     </div>
@@ -36,7 +31,5 @@
         </div>
     </div>
 </section>
-
 <?php
 include ROOT . '/view/layers/footer.php';
-

@@ -23,7 +23,7 @@
                                         </a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
-                                        <img src="/design/images/home/new.png" class="new" alt=""/>
+                                        <img src="/public/images/home/new.png" class="new" alt=""/>
                                     <?php endif; ?>
                                 </div>
                             </div>
@@ -36,7 +36,6 @@
         </div>
     </div>
 </section>
-
 <?php
 include ROOT . '/view/layers/footer.php';
 

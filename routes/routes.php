@@ -7,9 +7,6 @@ return array(
     'catalog/_([0-9])+' => 'catalog/index/$1',
     'catalog/([0-9])+' => 'catalog/index/$1',
     'catalog' => 'catalog/index',
-    'blog' => 'main/index',
-    'about' => 'main/index',
-    'contacts' => 'main/index',
     'product/([0-9]+)' => 'product/view/$1',
     // -- user interaction -- 
     'register' => 'user/register',
@@ -17,8 +14,6 @@ return array(
     'cabinet' => 'cabinet/index',
     'login' => 'user/login',
     'logout' => 'user/logout',
-    'main/contact' => 'main/contact',
-    'contact' => 'main/contact',
     // cart interaction:
     'cart/addAjax/([0-9]+)' => 'cart/addAjax/$1',
     'cart/add/([0-9]+)' => 'cart/add/$1', // for synchrone adding 
@@ -51,8 +46,8 @@ return array(
     'admin' => 'admin/index',
     // contacts about
     'contacts' => 'main/contact',
+    'main/contact' => 'main/contact',
     'about' => 'main/about',
-    'blog' => 'main/blog',
     // -- redirects to main page --
     'index.html' => 'main/index',
     'index.php' => 'main/index',
