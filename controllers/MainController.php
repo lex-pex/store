@@ -2,33 +2,34 @@
 
 class MainController {
 
+    /**
+     * Websites Main Page
+     */
     public function actionIndex() {
         $articles = Article::getArticles();
         require_once ROOT.'/view/main/index.php';
     }
 
+    /**
+     * Contact form
+     * @return bool
+     */
     public function actionContact() {
         $mail = '';
         $subject = 'Тема письма';
         $text = '';
         $message = '';
         $res = false;
-
         if (isset($_POST['submit'])) {
-
             $mail = $_POST['mail'];
             $text = $_POST['text'];
-
             $errors = false;
-
             if (!User::checkMail($mail)) {
                 $errors[] = 'Wrong E-mail';
             }
-
             if (empty(trim($text))) {
                 $errors[] = 'The message is empty';
             }
-
             if ($errors == false) {
                 $adminEmail = 'javaenginee@gmail.com';
                 $message = "Текст: {$text}. От {$mail}";
@@ -40,6 +41,10 @@ class MainController {
         return true;
     }
 
+    /**
+     * About page
+     * @return bool
+     */
     public function actionAbout() {
         require_once(ROOT . '/view/main/about.php');
         return true;
@@ -49,7 +54,6 @@ class MainController {
         $this->actionIndex();
         return true;
     }
-    
 }
 
 

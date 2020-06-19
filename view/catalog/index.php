@@ -16,11 +16,8 @@
                                             <h2>$<?php echo $product['price']; ?></h2>
                                             <p><?php echo $product['name']; ?></p>
                                         </a>
-                                        <!--<a href="/cart/add/"-->
                                         <a href="#"  data_id="<?php echo $product['id']; ?>"
-                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>
-                                            В корзину
-                                        </a>
+                                           class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
                                     </div>
                                     <?php if ($product['is_new']): ?>
                                         <img src="/public/images/home/new.png" class="new" alt=""/>
