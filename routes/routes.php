@@ -45,6 +45,7 @@ return array(
     // admin pane:
     'admin' => 'admin/index',
     // contacts about
+    'outer_contacts_handler' => 'main/outer',
     'contacts' => 'main/contact',
     'main/contact' => 'main/contact',
     'about' => 'main/about',

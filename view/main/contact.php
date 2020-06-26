@@ -17,14 +17,14 @@
                                 <div class="signup-form">
                                     <form action="#" method="post">
                                         <input type="email" name="mail" placeholder="E-mail" value="<?php echo $mail ?>" />
-                                        <textarea name="text" placeholder="Сообщение" value="<?php echo $text ?>"></textarea>
+                                        <textarea name="text" placeholder="Сообщение"><?php echo $text ?></textarea>
                                         <br/>
                                         <?php if (isset($errors) && is_array($errors)): ?>
                                             <ul>
                                                 <?php foreach ($errors as $e): ?>
                                                     <li style="color:#F08080;font-weight:bold">
                                                         <?php echo $e; ?>
-                                                    </li>    
+                                                    </li>
                                                 <?php endforeach; ?>
                                             </ul>
                                         <?php endif; ?>

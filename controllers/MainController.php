@@ -42,6 +42,31 @@ class MainController {
     }
 
     /**
+     * Outer Contact Form Handler
+     */
+    public function actionOuter() {
+        if (isset($_POST)) {
+            $mail = $_POST['email'];
+            $text = $_POST['message'];
+            $errors = false;
+            if (!User::checkMail($mail)) {
+                $errors[] = 'Wrong E-mail';
+            }
+            if (empty(trim($text))) {
+                $errors[] = 'The message is empty';
+            }
+            if ($errors == false) {
+                $adminEmail = 'javaenginee@gmail.com';
+                $message = "{$text}. ||| From: {$mail}";
+                $subject = 'LEXIS.INF.UA';
+                mail($adminEmail, $subject, $message);
+            }
+        }
+        header('Location: http://lexis.inf.ua');
+        return;
+    }
+
+    /**
      * About page
      * @return bool
      */

@@ -5,7 +5,7 @@
             <?php include ROOT . '/view/layers/left_bar.php'; ?>
             <div class="col-sm-9 padding-right">
                 <div class="features_items">
-                    <h2 class="title text-center">каталог</h2>
+                    <h2 class="title text-center">Catalog</h2>
                     <?php foreach ($products as $product): ?>
                         <div class="col-sm-4">
                             <div class="product-image-wrapper">
